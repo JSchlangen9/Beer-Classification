@@ -22,3 +22,5 @@ A challenge that I discovered during the data cleaning process was the presence 
 ## Exploratory Data Analysis
 
 As shown by the violin plot,
+
+## Model Selection

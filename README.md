@@ -11,4 +11,12 @@ As previosly mentioned, the dataset for this project was found from Kaggle and i
 
 Beer profile and ratings data set. Kaggle. (2021, November 18). https://www.kaggle.com/datasets/ruthgn/beer-profile-and-ratings-data-set/data
 
-##Data Cleaning
+## Data Cleaning
+
+Initial data cleaning will consist of removing unneeded columns and searching for null/missing/incorrect values in attribute columns. Columns that are not needed for the column include items such as 'Description' and 'Brewery'. Individual samples appear to be clean, and there were not any null values in the dataset. Records with a 'Max IBU' value equal to 0 were removed, because this most likely corresponds to a null value in that sample. This resulted in removing 100 records from the dataset.
+
+A challenge that I discovered during the data cleaning process was the presence of values equalling 0 that were completely legitimate. In many datasets, records with a 0 value can be excluded because they are either incorrect or highly improbable. With that said, due to the range of beer styles, many of these values could legitimately be 0, and that poses a risk to the validity of the analysis.
+
+## Exploratory Data Analysis
+
+As shown by the violin plot,

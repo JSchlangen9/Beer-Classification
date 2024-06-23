@@ -23,4 +23,6 @@ A challenge that I discovered during the data cleaning process was the presence 
 
 As shown by the violin plot,
 
-## Model Selection
+## Model Testing & Selection
+
+## Results & Conclusion

@@ -36,3 +36,9 @@ Through testing and iteration, I adjusted the hyperparameters for number of esti
 As shown in the feature importance plot, the 3 most imprtant features in the model are 'Min IBU', 'Max IBU', and 'Body'. This ties back to observations from the exploratory data analysis, as well as my domain knowledge. International Bitterness Unit (IBU) is largely a measure of a beers hoppiness/bitterness, and Body is one of the strongest defining characteristics of a beers taste/profile. 
 
 ## Results & Conclusion
+
+In terms of results, I am very satisified with the random forest classification model that I built, and the scores/metrics calculated are in agreement with that claim. Accuracy topped out at roughly 85%, while completeness and homegeneity scores were 73% and 72% respectively. The lower completeness and homegeneity scores tell me that beer styles tend to exist on a spectrum, and that the lines between categories are often blurred. For these reasons, a classification model with 10 different choices and 85% accuracy is incredible.
+
+The display of the confusion matrix shows 2 things clearly: Ale/Lager are the most popular types of beer in the dataset, and Bock is the most incorrectly classified style of beer. The model did quite well at distinguishing Ales and Lagers; however, it struggled with the Bock style which can often be described as similar to an Ale or a dark Lager. Again, the accuracy score wil show this case as an incorrect prediction, when in the real world it could be considered subjectively correct.
+
+For future testing, I would find it valuable to narrow down the number of beer styles that a model would try to predict. As previously mentioned, the model that I built classified a beer into 1 of 10 categories, which is very difficult to do when beers exist on a spectrum of styles. A model could be built with higher accuracy if it only had to fit beers into a group of 5 or less categories.

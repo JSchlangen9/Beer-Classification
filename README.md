@@ -21,7 +21,11 @@ A challenge that I discovered during the data cleaning process was the presence 
 
 ## Exploratory Data Analysis
 
-As shown by the violin plot,
+As shown by the violin plot, the flavor attributes largely appear to be normally distributed; however there are long tails in the positive for certain attributes. For example, the 'Sour' attribute has a large positive tail due to the fact that this is a 'Style' of beer, as well as the 'Bitter' attribute which tends to be associated with IPA's and other flavorful beers.
+
+After analyzing the review attributes, these do not appear to be helpful in the classification of the style of a beer. Review scores are largely independent of the style of beer, and therefore, these predictors are more likely to confuse the model. As a result, they will be removed from the pool of predictors that will be used to classify the beers.
+
+According to the correlation heatmaps, I observed some strong correlations which make sense given domain knowledge. For example, there is a strong correlation between 'Body' and 'Malty' attributes, as well as 'Bitter' and 'Hoppy' attributes. This is exciting to see because hops tend to give beer a bitter flavor, and body/malty traits are somewhat synonymous as well.
 
 ## Model Testing & Selection
 

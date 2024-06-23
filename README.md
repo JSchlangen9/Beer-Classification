@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-For this project, I will be analyzing the public Beer Profile Ratings Data Set from Kaggle (linked below). The goal of this project will be to create a classification model that accurately predicts the type/style of beer based on  some of its characteristics. My intial thought is to utilize a Decision Tree Classifer or an Ensemble/Random Forrest model; however; I will test additional models as needed depednding upon accuracy.
+For this project, I will be analyzing the public Beer Profile Ratings Data Set from Kaggle (linked below). The goal of this project will be to create a classification model that accurately predicts the type/style of beer based on  some of its characteristics. My intial thought is to utilize an Ensemble/Random Forrest model or a Support Vector Classifier; however; I will test additional models as needed depednding upon accuracy.
 
 
 ## Beer Profile Ratings Data Set
@@ -28,5 +28,11 @@ After analyzing the review attributes, these do not appear to be helpful in the 
 According to the correlation heatmaps, I observed some strong correlations which make sense given domain knowledge. For example, there is a strong correlation between 'Body' and 'Malty' attributes, as well as 'Bitter' and 'Hoppy' attributes. This is exciting to see because hops tend to give beer a bitter flavor, and body/malty traits are somewhat synonymous as well.
 
 ## Model Testing & Selection
+
+I initially tested base models using the support vector classifier and random forest packages without adjusting hyperparameters. By doing this, I quickly identified that the random forest model was better suited for the task at hand, and would proceed with diving deeper into the random forest model.
+
+Through testing and iteration, I adjusted the hyperparameters for number of estimators, and the number of features to be included in the model. By doing this, I observed an average 2% increase in the performance of the model, and the random forest model is roughly 85% accurate.
+
+As shown in the feature importance plot, the 3 most imprtant features in the model are 'Min IBU', 'Max IBU', and 'Body'. This ties back to observations from the exploratory data analysis, as well as my domain knowledge. International Bitterness Unit (IBU) is largely a measure of a beers hoppiness/bitterness, and Body is one of the strongest defining characteristics of a beers taste/profile. 
 
 ## Results & Conclusion
